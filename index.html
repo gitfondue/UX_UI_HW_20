@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
@@ -8,7 +12,234 @@
   <title>Welcome!</title>
 </head>
 <body>
-  
+  <nav>
+    <!--- Bootstrap nav Component --->
+    <ul class="nav nav-tabs" id="home">
+      <li class="nav-item">
+        <a class="nav-link active" href="#home">Introduction</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#research">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#probstmt">Problem Statement</a>
+      </li>
+        <a class="nav-link" href="#">Iterations</a>
+      </li>
+      </li>
+        <a class="nav-link" href="#">Prototype</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!--- Bootstrap jumbotron Component --->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">PerForm.</h1>
+      <p class="lead">The fitness application to perfect your form and start your journey in strength training.</p>
+    </div>
+  </div>
+
+  <!--- Bootstrap jumbotron Component --->
+  <div class="jumbotron jumbotron-fluid" id="research">
+    <div class="container">
+      <h2 class="display-4">Research</h2>
+    </div>
+  </div>
+
+  <!--- Bootstrap Collapse Component --->
+  <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          User Interviews
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        To conduct research, we did five interviews with a questionnaire surrounding the answers we were looking for. We considered about how a gym goer approaches their experience at the gym. This would include motivations, frustrations, routines, and how they look at working out as a whole. From the interviews, interviewees heavily cared about form and performing their workouts correctly. They also find staying fit and general health their major motivations for going to the gym. They like to have a person/video to follow for learning and somewhere to log their workouts. <br>
+
+        <center><img src="images/affinitydiagram.png"></center>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Competitor Analysis
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Feature Analysis
+The FitBit is a sleek, geometrical application that allows the user to track their steps, exercises, sleep, 
+food intake and more. They also have a section where users can partake in various challenges and 
+methods to improve their training/health. Users can also join communities to surround
+themselves around likeminded people and motivate themselves further. And to even go further ahead, 
+there is a premi um feature users can subscribe to as well. When signing up for an account, the user 
+provides their personal information and then sets up their purchased device to sync with the application.
+
+Competitive Advantage
+Has a calorie intake dial - Measures if user is in goal or not when  recording calorie intake
+Allows users to be social and motivate each other on app - can add friends
+Has a period tracker - normally fitness apps do not consider this 
+
+Strengths
+Clean, followable UI on the main page 
+User friendly text, like someone is speaking to you
+Social media component (Community)
+Creative cartoon graphics of people
+
+Weakness
+Possible confusion with word choice at the bottom buttons
+Hard to read text for areas with a stock photo + white text
+Not enough understanding of the calorie intake dials 
+
+Feature Analysis
+MyFitnessPal is a simple app that keeps track of food intakes, steps, exercise routines, and more. It mainly
+pertains to just two colors (blue and white), with black used for text. The sections are organized and self
+explanatory, so it is easy to access and find what a user is looking for. There is a social media component of
+the “Community” tab, and an option to “Go Prenimum” if the user wants more of the experience. The sign up
+page has a friendly user tone, allowing the user to provide their reasons and insights for using the app. It is
+almost like the app is a fitness trainer. However, the sign up process seems a bit rushed and confusing, as when 
+pressing certain buttons the app will move onto the next page, not letting the user press the “Next” button
+themselves. 
+
+Competitive Advantage
+Option to store recipes for meals
+Can store specific workout routines
+Tries to cater to user’s specific needs as much as possible during sign up
+
+Strengths
+Section titles are straightforward - easy to understand where to go
+The “+”/”x” button is unique and allows users to access a whole new menu for easy adding
+All the main measurements to keep tabs of are placed at the top of the app, for easy viewing
+
+Weakness
+Sign Up page has extra UX functionalities that are not even used (eg. the Next button when selecting an option)
+The subtext is too light/small which users can possibly miss when answering questions during sign up
+
+Feature Analysis
+FitNotes is mainly a tracking app for specific exercises and workout routines. They lay out commonly used exercises 
+and what body parts are affected during those exercises. They are editable as well, allowing the user to create their
+own ideal workout routine. There also seems to be options to analyze your workout routine, although these are 
+behind a premium payment. However, when the app first starts, word choice can mislead a user as “Swipe right” could 
+mean differently depending on who is using the app.
+
+Competitive Advantage
+Shows specific body parts that are affected during an exercise
+Lists exercises out themselves for users who are new to strength training
+
+Strengths
+Straightforward taskbar, easy to tell where to go for certain information
+Can log workouts effectively via a calendar
+
+Weakness
+Word choice for instructions can mislead users
+No community setting
+
+Feature Analysis
+YouTube is a main hub for videos, where users who want to workout may visit this website and view workout videos,
+health advice videos, diet/meal plan videos, etc. There are multiple people on YouTube who are popular/big accounts
+catered to health and witness, so users may see themselves drawn to those users and follow their tips/exercises. It
+is easier to get a visual representation of everything for following, and is free to use (unless a specific channel has
+paid content, which would be the equivalent of a “premium feature” on a fitness application. 
+
+Competitive Advantage
+Easy to access
+Visual representations of fitness workouts/meal plans
+YouTubers provide users with pre-made workout routines
+
+Strengths
+All the workouts are viewable, so users can easily follow
+Could possibly be able to reach out to a fitness YouTuber and ask questions (comment, email, etc.)
+Possible encouragement as users can see progress videos of fitness workouts and become motivated
+
+Weakness
+Not really anywhere to store user’s own progress/data
+Not all YouTubers’ body types/style match the user’s, so it may be difficult to find best way for user to stay fit
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Empathy Map
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+
+    <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Feature Priorization
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--- Bootstrap jumbotron Component --->
+  <div class="jumbotron jumbotron-fluid" id="probstmt">
+    <div class="container">
+      <h2 class="display-4">Problem Statement</h2>
+    </div>
+  </div>
+
+  <!--- Bootstrap col Component --->
+  <div class="row">
+  <div class="col">THE PROBLEM: Exercise applications offer those who are new to working out and others such as athletes to follow a workout and diet plan. Most fitness apps do not help inform users about proper posture or form. For users who are new or somewhat knowledgeable about working out, they want to work out properly such as using proper form to avoid a serious injury. How can we help users understand and use perfect form when working out at the gym or at home?</div>
+  <div class="col">THE SOLUTION: Per-Form is an app that helps users who are serious about exercising by displaying proper forms for different types of workouts from weight training to aerobics.</div>
+  <div class="w-100"></div>
+</div>
+
+
+    <!--- Bootstrap jumbotron Component --->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 class="display-4">Iterations</h2>
+    </div>
+  </div>
+
+  <div class="media">
+  <img src="..." class="mr-3" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0">Media heading</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+
+    <!--- Bootstrap jumbotron Component --->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 class="display-4">Prototype</h2>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="js/index.js"></script>
