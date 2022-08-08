@@ -4,32 +4,22 @@ body {
   font-size: 15px;
 }
 
-p {
-  font-size: 18px;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-family: "Inconsolata";
-  font-size: 30px;
-  margin: 0px;
-}
-
 h3 {
   font-family: "Inconsolata";
   font-size: 20px;
 }
 
-h4 {
-  border-bottom: solid;
-  padding: 5px;
-  margin: 0px;
-  border-color: #E54B4B;
-  display: inline;
-  font-family: "Happy Monkey";
+img {
+ max-width: 70%;
+ max-height: 70%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
