@@ -1,17 +1,50 @@
 body {
-	background-color: #EAEAEA;
   font-family: "Avenir"; 
   font-size: 15px;
 }
 
-h3 {
+h1 {
+  font-family: "Geo";
+}
+
+.display-3, .lead {
+  color: white;
+  background-color: #000000; 
+  background: rgba(0,0,0,.5);
+}
+
+h2, h3 {
   font-family: "Inconsolata";
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.nav-link:hover {
+  background-color: #E8B98E;
+}
+
+.display-4 {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #E8B98E;
+}
+
+.header {
+  background-image: url("../images/headerphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
 }
 
 img {
  max-width: 70%;
  max-height: 70%;
+}
+
+.mr-3 {
+   max-width: 30%;
+ max-height: 30%;
 }
 
 .center {
@@ -20,6 +53,7 @@ img {
   margin-right: auto;
   width: 50%;
   text-align: center;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
